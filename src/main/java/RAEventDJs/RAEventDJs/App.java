@@ -10,8 +10,12 @@ public class App {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("How many days from now:");
-		int daysFromNow = sc.nextInt();
+		System.out.println("Enter year: ");
+		int year = sc.nextInt();
+		System.out.println("Enter month number: ");
+		int month = sc.nextInt();
+		System.out.println("Enter day number: ");
+		int day = sc.nextInt();
 		
 		String url = "https://www.residentadvisor.net/events.aspx?ai=13&v=day&mn=7&yr=2016&dy=16";
 		String browser = "Firefox";
@@ -20,7 +24,7 @@ public class App {
 		
     	
     	
-		RAEventDJs.getcurrentListings(driver, daysFromNow);
+		RAEventDJs.getcurrentListings(driver, year, month, day);
 		
 		
 	}

@@ -37,11 +37,11 @@ public class BrowserLauncher {
 	    	driver.get("javascript:document.getElementById('overridelink').click();");
 		} else if(BrowserName.equalsIgnoreCase("Chrome")) {
 			ChromeOptions op = new ChromeOptions();
-			op.addArguments("--user-data-dir=C:\\Users\\Bernard\\AppData\\Local\\Google\\Chrome\\User Data");
+			op.addArguments("--user-data-dir=C:\\Users\\Bernard\\Desktop\\Selenium Data");
 			op.addArguments("--start-maximized");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			System.setProperty("webdriver.chrome.driver", "C:\\Eclipse Workspace\\LabelsBase\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Eclipse EE x86 Workspace\\ResidentAdvisorLabels\\chromedriver.exe");
 			driver = new ChromeDriver(op);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		} 

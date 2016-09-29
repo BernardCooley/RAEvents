@@ -1,11 +1,6 @@
 package RAEventDJs.RAEventDJs;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,41 +9,39 @@ import FrameworkUtils.CommonFunctions;
 import UiMap.RAEventPageElements;
 
 public class RAEventDJs {
+	private static ArrayList<String> urls = new ArrayList<String>();
 
-	private static HashMap<String, String> currentListingsList = new HashMap<String, String>();
-	private static StringBuilder sb = new StringBuilder();
+	public static void getcurrentListings(WebDriver driver, int year, int month, int day) {
+		driver.get(buildDate(year, month, day));
 
-	public static HashMap<String, String> getcurrentListings(WebDriver driver, int daysFromNow) {
-		Date date = new Date();
-		LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		urls = CommonFunctions.getStringListOfAttributes(driver, RAEventPageElements.eventLink, "href");
 
-		sb.append("https://www.residentadvisor.net/events.aspx?ai=13&v=day&mn=");
-		sb.append(localDate.getMonthValue());
-		sb.append("&yr=");
-		sb.append(localDate.getYear());
-		sb.append("&dy=");
-		sb.append(localDate.getDayOfMonth() + daysFromNow);
+		System.out.println(urls.size() + " events found");
+		System.out.println();
 
-		driver.get(sb.toString());
-
-		for (String s : CommonFunctions.getStringListOfAttributes(driver, RAEventPageElements.eventLink, "href")) {
+		for (String s : urls) {
+			System.out.println("-------------------------------------------------------------------------------------------------");
 			driver.get(s);
-			CommonFunctions.wait(1);
+			System.out.println(s);
+			System.out.println(CommonFunctions.getElementText(driver, RAEventPageElements.eventTitle));
 
+			CommonFunctions.wait(1);
 			for (WebElement we : driver.findElements(RAEventPageElements.lineUpItems)) {
-				currentListingsList.put(we.getText(),
-						CommonFunctions.getElementText(driver, RAEventPageElements.eventTitle));
+				System.out.println(we.getText());
 			}
 		}
-
-		Iterator<?> it = currentListingsList.entrySet().iterator();
-		while (it.hasNext()) {
-			Map.Entry<String, String> pair = (Map.Entry<String, String>) it.next();
-			System.out.println(pair.getKey());
-			// System.out.println(pair.getValue());
-			System.out.println("----------------------------------------------------------------------------");
-		}
-		return currentListingsList;
 	}
 
+	public static String buildDate(int year, int month, int day) {
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("https://www.residentadvisor.net/events.aspx?ai=13&v=day&mn=");
+		sb.append(month);
+		sb.append("&yr=");
+		sb.append(year);
+		sb.append("&dy=");
+		sb.append(day);
+
+		return sb.toString();
+	}
 }
