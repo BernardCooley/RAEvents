@@ -18,7 +18,7 @@ public class App {
 		int day = sc.nextInt();
 		
 		String url = "https://www.residentadvisor.net/events.aspx?ai=13&v=day&mn=7&yr=2016&dy=16";
-		String browser = "Firefox";
+		String browser = "PhantomJS";
 		BrowserLauncher bL = new BrowserLauncher();
     	WebDriver driver = bL.launchBrowser(browser);
 		

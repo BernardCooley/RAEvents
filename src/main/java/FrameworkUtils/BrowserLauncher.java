@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 //import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -45,16 +46,16 @@ public class BrowserLauncher {
 			driver = new ChromeDriver(op);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		} 
-//		else if(BrowserName.equalsIgnoreCase("PhantomJS")) {
-//			DesiredCapabilities capabilities = new DesiredCapabilities();
-//			capabilities.setCapability("takesScreenshot", false);
-//			String d = "\\";
-//			capabilities.setCapability("phantomjs.binary.path", "C:"+d+"Eclipse EE x86 Workspace"+d+"phantomjs-2.0.0-windows"+d+"bin"+d+"phantomjs.exe");
-//	        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-//	        capabilities.setCapability("load-images", false);
-//			driver = new PhantomJSDriver(capabilities);
-//			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//		}
+		else if(BrowserName.equalsIgnoreCase("PhantomJS")) {
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			capabilities.setCapability("takesScreenshot", false);
+			String d = "\\";
+			capabilities.setCapability("phantomjs.binary.path", "..\\RAEventDJs\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+	        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+	        capabilities.setCapability("load-images", false);
+			driver = new PhantomJSDriver(capabilities);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		}
 		
         return driver;
     }
