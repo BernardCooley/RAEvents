@@ -1,4 +1,5 @@
 package FrameworkUtils;
+
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -16,49 +17,62 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class BrowserLauncher {
 
 	private WebDriver driver = null;
-	
+
 	public BrowserLauncher() {
-		
+
 	}
-	
+
 	public WebDriver launchBrowser(String BrowserName) {
-		if(BrowserName.equalsIgnoreCase("Firefox")) {
-//			FirefoxProfile p = new FirefoxProfile(new File("C:\\Users\\Bernard\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\0g0i8bia.default"));
-//			p.setPreference("permissions.default.image", 2);
-//			p.setPreference("permissions.default.stylesheet", 2);
+		if (BrowserName.equalsIgnoreCase("Firefox")) {
+			// FirefoxProfile p = new FirefoxProfile(new
+			// File("C:\\Users\\Bernard\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\0g0i8bia.default"));
+			// p.setPreference("permissions.default.image", 2);
+			// p.setPreference("permissions.default.stylesheet", 2);
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-		} else if(BrowserName.equalsIgnoreCase("IE")) {
+		} else if (BrowserName.equalsIgnoreCase("IE")) {
 			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "");
-	    	System.setProperty("webdriver.ie.driver", "C:\\Eclipse EE x86 Workspace\\ResidentAdvisorLabels\\IEDriverServer.exe");
-	    	driver = new InternetExplorerDriver(capabilities);
-	    	driver.get("javascript:document.getElementById('overridelink').click();");
-		} else if(BrowserName.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.ie.driver",
+					"C:\\Eclipse EE x86 Workspace\\ResidentAdvisorLabels\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver(capabilities);
+			driver.get("javascript:document.getElementById('overridelink').click();");
+		} else if (BrowserName.equalsIgnoreCase("Chrome")) {
 			ChromeOptions op = new ChromeOptions();
 			op.addArguments("--user-data-dir=C:\\Users\\Bernard\\Desktop\\Selenium Data");
 			op.addArguments("--start-maximized");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			System.setProperty("webdriver.chrome.driver", "C:\\Eclipse EE x86 Workspace\\ResidentAdvisorLabels\\chromedriver.exe");
+			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Eclipse EE x86 Workspace\\ResidentAdvisorLabels\\chromedriver.exe");
 			driver = new ChromeDriver(op);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		} 
-		else if(BrowserName.equalsIgnoreCase("PhantomJS")) {
+		} else if (BrowserName.equalsIgnoreCase("PhantomJS")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability("takesScreenshot", false);
-			String d = "\\";
-			capabilities.setCapability("phantomjs.binary.path", "..\\RAEventDJs\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
-	        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-	        capabilities.setCapability("load-images", false);
+			System.out.println(System.getProperty("os.name"));
+			String version = "phantomjs";
+			String os = null;
+			String d = null;
+			if (System.getProperty("os.name").contains("Mac")) {
+				d = "/";
+				os = "mac";
+			} else if (System.getProperty("OS").contains("Windows")) {
+				d = "\\";
+				version = version + ".exe";
+				os = "win";
+			}
+			capabilities.setCapability("phantomjs.binary.path",
+					"phantomJS" + d + os + d + "bin" + d + version);
+			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			capabilities.setCapability("load-images", false);
 			driver = new PhantomJSDriver(capabilities);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		}
-		
-        return driver;
-    }
-	
-	
+
+		return driver;
+	}
+
 }
