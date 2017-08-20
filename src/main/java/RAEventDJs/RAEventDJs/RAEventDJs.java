@@ -22,7 +22,9 @@ public class RAEventDJs {
 
 		for (String s : urls) {
 			System.out.println("-------------------------------------------------------------------------------------------------");
+			
 			driver.get(s);
+			System.out.println(urls.indexOf(s) + " of " + urls.size());
 			System.out.println(s);
 			System.out.println(CommonFunctions.getElementText(driver, RAEventPageElements.eventTitle));
 

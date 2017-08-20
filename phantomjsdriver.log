@@ -1,0 +1,18 @@
+[INFO  - 2017-08-20T01:15:43.745Z] GhostDriver - Main - running on port 10296
+[INFO  - 2017-08-20T01:15:44.160Z] Session [16e62a70-8545-11e7-9aaa-756609a537c8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-20T01:15:44.160Z] Session [16e62a70-8545-11e7-9aaa-756609a537c8] - page.customHeaders:  - {}
+[INFO  - 2017-08-20T01:15:44.160Z] Session [16e62a70-8545-11e7-9aaa-756609a537c8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-20T01:15:44.161Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 16e62a70-8545-11e7-9aaa-756609a537c8
+[ERROR - 2017-08-20T01:17:54.244Z] Session [16e62a70-8545-11e7-9aaa-756609a537c8] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 669127169945877
+[ERROR - 2017-08-20T01:17:54.248Z] Session [16e62a70-8545-11e7-9aaa-756609a537c8] - page.onError - stack:
+  kc (https://connect.facebook.net/en_US/fbevents.js:24)
+[INFO  - 2017-08-20T01:20:43.737Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:21:51.398Z] GhostDriver - Main - running on port 34204
+[INFO  - 2017-08-20T01:21:51.734Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-20T01:21:51.734Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - page.customHeaders:  - {}
+[INFO  - 2017-08-20T01:21:51.734Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-20T01:21:51.734Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f1fdf700-8545-11e7-af26-f19ad991c6ef
+[ERROR - 2017-08-20T01:24:03.816Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 669127169945877
+[ERROR - 2017-08-20T01:24:03.819Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - page.onError - stack:
+  kc (https://connect.facebook.net/en_US/fbevents.js:24)
+[INFO  - 2017-08-20T01:25:43.728Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
