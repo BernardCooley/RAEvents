@@ -16,3 +16,51 @@
 [ERROR - 2017-08-20T01:24:03.819Z] Session [f1fdf700-8545-11e7-af26-f19ad991c6ef] - page.onError - stack:
   kc (https://connect.facebook.net/en_US/fbevents.js:24)
 [INFO  - 2017-08-20T01:25:43.728Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:26:51.403Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:30:43.719Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:31:51.394Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:43:42.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:44:49.886Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:48:42.209Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:49:49.878Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T01:59:56.464Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:01:04.132Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:04:56.459Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:06:04.124Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:09:56.450Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:11:04.118Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:14:56.441Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:16:04.113Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:19:56.433Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:21:04.103Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-20T02:24:56.430Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:08:06.766Z] GhostDriver - Main - running on port 35150
+[INFO  - 2017-09-28T22:08:07.326Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-28T22:08:07.326Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.customHeaders:  - {}
+[INFO  - 2017-09-28T22:08:07.326Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-28T22:08:07.326Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 81d39c50-a499-11e7-a94d-6700b3e788b9
+[ERROR - 2017-09-28T22:08:43.214Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.onError - msg: Facebook Pixel Error: Error: [ID:930490940353935] An invalid email address was specified for 'em'. This data will not be sent with any events for this Pixel.
+[ERROR - 2017-09-28T22:08:43.214Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.onError - stack:
+  lc (https://connect.facebook.net/en_US/fbevents.js:24)
+[ERROR - 2017-09-28T22:10:08.335Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.onError - msg: Facebook Pixel Error: Error: Duplicate Pixel ID: 669127169945877
+[ERROR - 2017-09-28T22:10:08.335Z] Session [81d39c50-a499-11e7-a94d-6700b3e788b9] - page.onError - stack:
+  lc (https://connect.facebook.net/en_US/fbevents.js:24)
+[INFO  - 2017-09-28T22:13:06.766Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:18:06.788Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:23:06.776Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:28:06.761Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:33:06.747Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-09-28T22:38:06.735Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-11-09T00:14:01.287Z] GhostDriver - Main - running on port 43162
+[INFO  - 2017-11-09T00:14:01.803Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-11-09T00:14:01.803Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.customHeaders:  - {}
+[INFO  - 2017-11-09T00:14:01.804Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":false,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-11-09T00:14:01.805Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e3951220-c4e2-11e7-bf00-cd4fc69fa3a5
+[ERROR - 2017-11-09T00:14:58.288Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.onError - msg: Facebook Pixel Error: Error: [ID:930490940353935] An invalid email address was specified for 'em'. This data will not be sent with any events for this Pixel.
+[ERROR - 2017-11-09T00:14:58.288Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.onError - stack:
+  q (https://connect.facebook.net/en_US/fbevents.js:24)
+[INFO  - 2017-11-09T00:19:01.280Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-11-09T00:19:54.927Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.onError - msg: Facebook Pixel Error: Error: Duplicate Pixel ID: 669127169945877
+[ERROR - 2017-11-09T00:19:54.928Z] Session [e3951220-c4e2-11e7-bf00-cd4fc69fa3a5] - page.onError - stack:
+  q (https://connect.facebook.net/en_US/fbevents.js:24)
+[INFO  - 2017-11-09T00:24:01.274Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
